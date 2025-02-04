@@ -17,7 +17,7 @@ jobs:
     steps:
     - run: date
   dependent_job2:
-    needs: dependent_job1
+    needs: [dependent_job1]
     runs-on: ubuntu-lastest
     steps:
     - run: pwd
